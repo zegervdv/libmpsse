@@ -1,1 +1,6 @@
 env/
+Makefile
+config.h
+config.status
+mpsse_wrap.c
+pylibmpsse.py
