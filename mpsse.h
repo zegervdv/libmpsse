@@ -49,15 +49,15 @@ enum interface {
 enum clock_rates {
   ONE_HUNDRED_KHZ  = 100000,
   FOUR_HUNDRED_KHZ = 400000,
-  ONE_MHZ    = 1000000,
-  TWO_MHZ    = 2000000,
-  FIVE_MHZ   = 5000000,
-  SIX_MHZ    = 6000000,
-  TEN_MHZ    = 10000000,
-  TWELVE_MHZ   = 12000000,
+  ONE_MHZ          = 1000000,
+  TWO_MHZ          = 2000000,
+  FIVE_MHZ         = 5000000,
+  SIX_MHZ          = 6000000,
+  TEN_MHZ          = 10000000,
+  TWELVE_MHZ       = 12000000,
   FIFTEEN_MHZ      = 15000000,
-  THIRTY_MHZ   = 30000000,
-  SIXTY_MHZ    = 60000000
+  THIRTY_MHZ       = 30000000,
+  SIXTY_MHZ        = 60000000
 };
 
 /* Supported MPSSE modes */
@@ -106,20 +106,20 @@ enum i2c_ack {
 #define DEFAULT_PORT            (SK | CS)               /* SK and CS are high, all others low */
 
 enum mpsse_commands {
-  INVALID_COMMAND   = 0xAB,
+  INVALID_COMMAND         = 0xAB,
   ENABLE_ADAPTIVE_CLOCK   = 0x96,
   DISABLE_ADAPTIVE_CLOCK  = 0x97,
-  ENABLE_3_PHASE_CLOCK  = 0x8C,
-  DISABLE_3_PHASE_CLOCK = 0x8D,
-  TCK_X5      = 0x8A,
-  TCK_D5      = 0x8B,
-  CLOCK_N_CYCLES    = 0x8E,
-  CLOCK_N8_CYCLES   = 0x8F,
-  PULSE_CLOCK_IO_HIGH = 0x94,
-  PULSE_CLOCK_IO_LOW  = 0x95,
+  ENABLE_3_PHASE_CLOCK    = 0x8C,
+  DISABLE_3_PHASE_CLOCK   = 0x8D,
+  TCK_X5                  = 0x8A,
+  TCK_D5                  = 0x8B,
+  CLOCK_N_CYCLES          = 0x8E,
+  CLOCK_N8_CYCLES         = 0x8F,
+  PULSE_CLOCK_IO_HIGH     = 0x94,
+  PULSE_CLOCK_IO_LOW      = 0x95,
   CLOCK_N8_CYCLES_IO_HIGH = 0x9C,
   CLOCK_N8_CYCLES_IO_LOW  = 0x9D,
-  TRISTATE_IO   = 0x9E,
+  TRISTATE_IO             = 0x9E,
 };
 
 enum low_bits_status {
